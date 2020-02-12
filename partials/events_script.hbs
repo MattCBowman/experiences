@@ -1,0 +1,12 @@
+<script>
+	{
+		var ans = ANSWERS.init(/* ... */);
+		var SearchBar = { /* default SearchBar config */ };
+		{{#if componentConfig.SearchBar}}
+		SearchBar.extend({json componentConfig.SearchBar});
+		{{/if}}
+		{{#if not excludedComponents.contains("SearchBar")}}
+			ans.addComponent("SearchBar", SearchBar);
+		{{/if}}
+	}
+</script>
