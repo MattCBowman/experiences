@@ -1,9 +1,9 @@
 module.exports = {
 	apiKey: "sjdhfjkdsfjklda",
 	outputDirectory: "desktop/", // default is public
-	plugins: [
-		{
-			name: "answers-handlebars"
+	componentConfig: {
+		QAQuestionSubmission: {
+			entity_id: "my_qa_entity"
 		}
-	]
+	}
 }

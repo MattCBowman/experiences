@@ -1,26 +1,16 @@
 // Events vertical
-
-module.exports = {
+let events = {
 	answers: {
-		experienceKey: "my_super_experience",
-		experienceLayout: {
-			script: "events_script",
-			dom: "events_dom",
-		},
-		additionalData1: {},
-		additionalData2: {},
+		experienceKey: "a_client_experience",
+		experienceLayout: "experience_seven",
 		componentConfig: {
 			SearchBar: {
-				/* config for searchbar */
+				/* settings for searchbar */
 			}
 		},
 		excludedComponents: [ "SearchyMcSearchBarFace" ]
 	},
 	title: "Event Search",
-	mapToOutput: [
-		{
-			inputFileName: "events.hbs",
-			outputFileName: "events.html"
-		}
-	],
-}
+};
+
+export {events};
